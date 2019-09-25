@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppCEP.PrincipalPage"
+             BackgroundImage="fundo">
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="logo"
+                   Margin="10"
+                   WidthRequest="200"
+                   HeightRequest="100"/>
+            
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Soap"
+                    BackgroundColor="#21557c"
+                    HorizontalOptions="FillAndExpand"
+                    Margin="5,0,5,0"
+                    x:Name="buttonSoapPage"
+                    BorderRadius="8"
+                    Clicked="ButtonSoapPage_Clicked"/>
+                <Button Text="Rest"
+                    BackgroundColor="#21557c"
+                    HorizontalOptions="FillAndExpand"
+                    Margin="5,0,5,0"
+                    x:Name="buttonRestPage"
+                    BorderRadius="8"
+                    Clicked="ButtonRestPage_Clicked"/>
+                
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Button Text="NUGET ( 1 )"
+                    BackgroundColor="#21557c"
+                    HorizontalOptions="FillAndExpand"
+                    Margin="5,0,5,0"
+                    x:Name="buttonNuGet1"
+                    BorderRadius="8"
+                        Clicked="ButtonNuGet1_Clicked"/>
+                <Button Text="NUGET ( 2 )"
+                    BackgroundColor="#21557c"
+                    HorizontalOptions="FillAndExpand"
+                    Margin="5,0,5,0"
+                    x:Name="buttonNuGet2"
+                    BorderRadius="8"
+                    Clicked="ButtonNuGet2_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

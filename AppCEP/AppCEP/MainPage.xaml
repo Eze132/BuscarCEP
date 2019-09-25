@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AppCEP"
+             x:Class="AppCEP.MainPage"
+             BackgroundColor="#71a5c9">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Image Source="logo"
+               Margin="50"/>
+        <Entry x:Name="entryCEP"
+               Placeholder="Dígite um CEP"
+               HorizontalTextAlignment="Center"
+               Margin="10"
+               Keyboard="Numeric"/>
+        <StackLayout Orientation="Horizontal">
+            
+            <Button Text="Limpar"
+                    BackgroundColor="#21557c"
+                    HorizontalOptions="FillAndExpand"
+                    Margin="5,0,5,0"
+                    x:Name="buttonLimpar"
+                    BorderRadius="8"/>
+            <Button Text="Buscar"
+                    HorizontalOptions="FillAndExpand"
+                    x:Name="buttonBuscar"
+                    Margin="5,0,5,0"
+                    BackgroundColor="#21557c"
+                    BorderRadius="8"
+                    Clicked="ButtonBuscar_Clicked"/>
+            
+        </StackLayout>
+        <Label x:Name="labelResultado"/>
+
+    </StackLayout>
+
+</ContentPage>
