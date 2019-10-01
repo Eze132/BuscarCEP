@@ -15,7 +15,8 @@ namespace AppCEP
 		public JSonPage ()
 		{
 			InitializeComponent ();
-		}
+           // NavigationPage.SetHasNavigationBar(this, false);
+        }
 
         private void ButtonBuscarCEPJson_Clicked(object sender, EventArgs e)
         {

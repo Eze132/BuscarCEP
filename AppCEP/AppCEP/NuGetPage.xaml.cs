@@ -17,7 +17,9 @@ namespace AppCEP
 		public NuGetPage ()
 		{
 			InitializeComponent ();
-		}
+            NavigationPage.SetHasNavigationBar(this, false);
+
+        }
 
         private void ButtonNuGetBuscar_Clicked(object sender, EventArgs e)
         {

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppCEP.MenuPage">
+  <MasterDetailPage.Master>
+      <ContentPage Title="Menu">
+            <ContentPage.Content>
+               
+                <StackLayout BackgroundColor="#245f8a">
+                    <TableView Intent="Menu">
+                        <TableSection>
+                            <ViewCell x:Name="PaginaSoap"
+                                      Tapped="PaginaSoap_Tapped">
+                                <Label Text="SOAP"
+                                       HorizontalTextAlignment="Center"/>
+                            </ViewCell>
+                            
+                            <ViewCell x:Name="PaginaRest"
+                                      Tapped="PaginaRest_Tapped">
+
+                                <Label Text="Rest"
+                                       HorizontalOptions="Center"/>
+                            </ViewCell>
+                            
+                            <ViewCell x:Name="PaginaSobre"
+                                      Tapped="PaginaSobre_Tapped">
+                                <Label Text="Sobre"
+                                       HorizontalOptions="Center"/>
+
+                            </ViewCell>
+                            <ViewCell x:Name="PaginaNuget"
+                                      Tapped="PaginaNuget_Tapped">
+                                <Label Text="NuGet1"
+                                       HorizontalOptions="Center"/>
+
+                            </ViewCell>
+
+                        </TableSection>
+                        
+                    </TableView>
+
+                </StackLayout>
+                
+             </ContentPage.Content>
+          
+      </ContentPage>
+  </MasterDetailPage.Master>
+</MasterDetailPage>

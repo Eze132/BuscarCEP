@@ -13,7 +13,8 @@ namespace AppCEP
             InitializeComponent();
 
             //MainPage = new NuGetPag(); //MainPage();
-            MainPage = new NavigationPage(new PrincipalPage());
+            // MainPage = new MenuPage();
+            MainPage = new NavigationPage( new TLogin());
         }
 
         protected override void OnStart()

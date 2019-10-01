@@ -15,7 +15,7 @@ namespace AppCEP
 		public PrincipalPage ()
 		{
 			InitializeComponent ();
-            NavigationPage.SetHasNavigationBar(this, false);
+            //NavigationPage.SetHasNavigationBar(this, false);
 		}
 
         private void ButtonNuGet1_Clicked(object sender, EventArgs e)

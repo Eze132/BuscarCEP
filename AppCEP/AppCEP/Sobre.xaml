@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppCEP.Sobre">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="bla bla bla"
+                   Margin="20,50,20,10"/>
+            <Button Text="Visite o site do Senac Botucatu"
+                    x:Name="buttonSiteSenac"
+                    Clicked="ButtonSiteSenac_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

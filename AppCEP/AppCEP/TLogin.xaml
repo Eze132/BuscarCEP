@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppCEP.TLogin"
+             BackgroundImage="fundo">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="Logo"
+                   HorizontalOptions="Center"
+                   Margin="10"
+                   WidthRequest="200"
+                   HeightRequest="100"/>
+            <Label Text="Login"
+                   HorizontalOptions="Center"
+                   Margin="0,50,0,0"
+                   FontSize="30"/>
+            <Entry x:Name="entryUsuario" 
+                   Placeholder="Nome do Usuario"
+                   HorizontalTextAlignment="Center"
+                   Margin="0,30,0,0"
+                   HorizontalOptions="FillAndExpand"/>
+            <Entry x:Name="entrySenha" 
+                   Placeholder="Senha do Usuario"
+                   HorizontalTextAlignment="Center"
+                   Margin="0,30,0,0"
+                   IsPassword="True"
+                   HorizontalOptions="FillAndExpand"/>
+           
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="buttonLimpar"
+                    Text="Limpar"
+                    BorderColor="Transparent"
+                    HorizontalOptions="FillAndExpand"
+                    Margin="0,25,0,0"
+                    Clicked="ButtonLimpar_Clicked"/>
+                
+                <Button x:Name="buttonLogar"
+                    Text="Logar"
+                    BorderColor="Transparent"
+                    HorizontalOptions="FillAndExpand"
+                    Margin="0,25,0,0"
+                    Clicked="ButtonLogar_Clicked_1"/>
+                
+            </StackLayout>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
